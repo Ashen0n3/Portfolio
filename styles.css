@@ -1,8 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #2C3333;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #010f0f;
     color: #CBE4DE;
 }
 
-strong {
-    color: #0E8388;
+.titulo-destaque {
+    color: #0E8388 ;
+}
+
+.apresentacao {
+    margin: 12% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+.apresentacao__conteudo__texto{
+    
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+.apresentacao__links{
+    display: flex;  
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: #010f0f;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    background-color: #0E8388;
+    width: 280px;
+    border-radius: 16px;
+    padding: 21.5px 0;
+    
 }
