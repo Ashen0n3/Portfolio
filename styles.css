@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
@@ -8,55 +9,89 @@
 }
 
 body {
-    height: 100vh;
+    /*height: 100vh;*/
     box-sizing: border-box;
-    background-color: #010f0f;
+    background-color: #010c0c;
     color: #CBE4DE;
 }
 
 .titulo-destaque {
-    color: #0E8388 ;
+    color: #0E8388;
 }
 
 .apresentacao {
-    margin: 12% 15%;
+    padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
+
 }
 
-.apresentacao__conteudo{
+.apresentacao__conteudo {
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.apresentacao__conteudo__titulo{
+.apresentacao__conteudo__titulo {
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
 }
-.apresentacao__conteudo__texto{
-    
+
+.apresentacao__conteudo__texto {
+
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
 }
 
-.apresentacao__links{
-    display: flex;  
+.apresentacao__links {
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #CBE4DE;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
-    color: #010f0f;
+    color: #f6f6f6;
+    border: 2px solid #0E8388;
     text-decoration: none;
     text-align: center;
     font-weight: 600;
-    background-color: #0E8388;
-    width: 280px;
-    border-radius: 16px;
+    width: 378px;
+    border-radius: 8px;
     padding: 21.5px 0;
-    
+}
+
+.apresentacao__links__link:hover {
+    background-color: #031f1f;
+}
+
+.apresentacao__foto:hover {
+    flex-grow: 0.05;
+}
+
+.rodape {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 23.64px;
+    text-align:  center;
+    color: #CBE4DE;
+    background-color: #0E8388;
+
 }
