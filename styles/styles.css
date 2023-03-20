@@ -2,25 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+    --cor-primaria: #010c0c;
+    --cor-secundaria: #CBE4DE;
+    --cor-terciaria: #0E8388;
+    --cor-hover: #031f1f;
 
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Quicksand', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    /*height: 100vh;*/
     box-sizing: border-box;
-    background-color: #010c0c;
-    color: #CBE4DE;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-terciaria);
 
+}
 .titulo-destaque {
-    color: #0E8388;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,12 +59,12 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__texto {
 
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
 
@@ -55,20 +77,20 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 24px;
-    color: #CBE4DE;
+    color: var(--cor-secundaria);
 }
 
 .apresentacao__links__link {
     display: flex;
     justify-content: center;
     gap: 16px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
-    color: #f6f6f6;
-    border: 2px solid #0E8388;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
     text-decoration: none;
     text-align: center;
     font-weight: 600;
@@ -78,7 +100,7 @@ body {
 }
 
 .apresentacao__links__link:hover {
-    background-color: #031f1f;
+    background-color: var(--cor-hover);
 }
 
 .apresentacao__foto:hover {
@@ -87,11 +109,11 @@ body {
 
 .rodape {
     font-size: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     padding: 23.64px;
     text-align:  center;
-    color: #CBE4DE;
-    background-color: #0E8388;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
 
 }
