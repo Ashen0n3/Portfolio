@@ -67,8 +67,19 @@ body {
 
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
+    gap: 5px;
 }
-
+.apresentacao__conteudo__texto__titulo__experiencias{
+    font-size: 1.69rem;
+    list-style-type: none;    
+}
+.apresentacao__conteudo__texto__titulo__experiencias__descricao{
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 8px;
+}
 .apresentacao__links {
     display: flex;
     justify-content: space-between;
